@@ -47,3 +47,15 @@ if (StatusCode == 200) {
 }else if (StatusCode == 404) {
     console.log("API test failed");
 }
+
+//Example 3 — Page title validation
+//Automation mein aise conditions ka concept assertions/validations ke saath closely related hai.
+
+let actualTitle = "Amazon";
+let expectedTitle = "Amazon";
+
+if (actualTitle === expectedTitle) {
+    console.log("this is line no 57 Page title validation is passed");
+}else {
+    console.log("this is line no 59 Page title validation is failed");
+}
