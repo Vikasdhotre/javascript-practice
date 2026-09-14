@@ -99,3 +99,41 @@ for (let testCase = 1; testCase <= 10; testCase++) {
     }
     console.log("Executing test case number: " + testCase);
 }
+
+//7 continue loop ko skip kar deta hai aur next iteration pe chala jata hai.
+// current iteration ko skip karta hai aur next iteration par chala jata hai.
+
+for (let i = 1; i <= 5; i++) {  
+    if (i === 3) //3 skip ho gaya.
+         {
+        continue; // current iteration ko skip karo
+    }
+    console.log(i);
+}
+
+// difference between break and continue
+// break     → entire loop stop 🛑
+// continue  → current iteration skip ⏭
+
+//Testing usage
+//Agar kisi test data ko skip karna ho:
+
+let testCases = ["Login", "Signup", "Payment", "Logout"];
+for (let testCase of testCases) {
+    if (testCase === "Payment") {
+      
+        continue; // current iteration ko skip karo
+    }
+    console.log("Executing test case: " + testCase);
+}
+
+
+//8 Nested loops
+// defination Jab ek loop ke andar doosra loop hota hai, use nested loop kehte hain.
+for (let i = 1; i <= 3; i++) {
+
+    for (let j = 1; j <= 2; j++) {
+        console.log("i:", i, "j:", j);
+    }
+
+}
