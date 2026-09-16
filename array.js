@@ -49,5 +49,39 @@ let fruits = ["Apple", "Banana", "Mango"];
 fruits.push("Orange");
 console.log(fruits); // Output: ["Apple", "Banana", "Mango", "Orange"]
 
+//pop()
+//Array ke end se element remove karta hai.
+// definition: pop method is used to remove the last element from an array and returns that element.
+let vegetables = ["Carrot", "Potato", "Tomato"];
+let removedVegetable = vegetables.pop();//ye line me hamene pop ka use karne ke baad vegetables array me se last element remove ho gaya aur removedVegetable variable me store ho gaya.
+console.log(removedVegetable);// Output: "Tomato"
+
+// unshift() method
+// Array ke start mein element add karta hai.
+
+let browsersName = ["Firefox", "Edge"];
+
+browsersName.unshift("Chrome");
+
+console.log(browsersName);//output is ["Chrome", "Firefox", "Edge"]
+
+// shift()
+// Array ke start se element remove karta hai.
+
+let browsersDriver = ["Chrome", "Firefox", "Edge"];
+
+browsersDriver.shift();
+
+console.log(browsersDriver);//output is ["Firefox", "Edge"]
+
+// important methods
+// push()    → add at END
+// pop()     → remove from END
+// unshift() → add at START
+// shift()   → remove from START
+
+
+
+
 
 
